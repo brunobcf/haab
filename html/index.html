@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="./scripts/myscripts.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <title>HAAB - Habitat Agriculture and Automated Biosphere </title>
+        <link rel="icon" href="favicon.png">    
+    </head>
+    
+    <body id="haab" data-spy="scroll" data-target=".navbar" data-offset="50" >
+    
+        <div class="header text-center">
+
+          <nav class="navbar navbar-inverse  navbar-fixed-top">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                  <a class="navbar-brand" href="#">HAAB</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#control">Control</a></li>
+                      <li><a href="#cam">Cameras</a></li>
+                      <li><a href="#">Trends</a></li>
+                      <li><a href="#">Events</a></li>
+                      <li><a href="calendar.html">Brasil</a></li>
+                    </ul>
+                
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+              </div>
+          </nav>
+
+        </div>
+        <div id="home" class="container1" style="padding-top:40px">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h1>H.A.A.B v0.4</h1>
+              <p>Habitat Agriculture and Automated Biosphere</p>
+              <hr> 
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron text-center">
+          <h1>Welcome home!</h1>
+        </div> 
+        <div id="control" class="container2" style="padding-top:40px">
+          <div class="row3">
+            <div class="col-sm-3">
+              <h3>Lamps control</h3>
+                <hr>
+              <p>Corridor lamp</p>
+             
+                  <button type="button" class="btn btn-success" onclick="geturl('http://atlantida.homeip.net/?com=901');">ON</button>
+                  <button type="button" class="btn btn-default" onclick="geturl('http://atlantida.homeip.net/?com=900');">OFF</button>
+             
+              <p>Living room lamps</p>
+              
+                  <button type="button" class="btn btn-success" onclick="geturl('http://atlantida.homeip.net/?com=921');">ON</button>
+                  <button type="button" class="btn btn-default" onclick="geturl('http://atlantida.homeip.net/?com=920');">OFF</button>
+                 
+              <p>Bedroom right lamp </p>
+              
+                  <button type="button" class="btn btn-success" onclick="geturl('http://atlantida.homeip.net/?com=501');">ON</button>
+                  <button type="button" class="btn btn-default" onclick="geturl('http://atlantida.homeip.net/?com=500');">OFF</button>
+           
+              <p>Bedroom left lamp</p>
+             
+                  <button type="button" class="btn btn-success" onclick="geturl('http://atlantida.homeip.net/?com=511');">ON</button>
+                  <button type="button" class="btn btn-default" onclick="geturl('http://atlantida.homeip.net/?com=510');">OFF</button>
+              
+              <p>Future</p>
+        
+                  <button type="button" class="btn btn-disabled">ON</button>
+                  <button type="button" class="btn btn-disabled">OFF</button>
+             
+            </div> <!--closing Lamps conrol-->
+            <div class="col-sm-3">
+              <h3>Heaters control</h3>
+                <hr>
+              <p>Living room heater</p>
+            
+                  <button type="button" class="btn btn-success" onclick="geturl('http://atlantida.homeip.net/?com=621');">ON</button>
+                  <button type="button" class="btn btn-default" onclick="geturl('http://atlantida.homeip.net/?com=620');">OFF</button>
+           
+              <p>Dinning room heater</p>
+          
+                  <button type="button" class="btn btn-success" onclick="geturl('http://atlantida.homeip.net/?com=601');">ON</button>
+                  <button type="button" class="btn btn-default" onclick="geturl('http://atlantida.homeip.net/?com=600');">OFF</button>
+           
+              <p>Bedroom heater</p>
+            
+                  <button type="button" class="btn btn-success" onclick="geturl('http://atlantida.homeip.net/?com=611');">ON</button>
+                  <button type="button" class="btn btn-default" onclick="geturl('http://atlantida.homeip.net/?com=610');">OFF</button>
+           
+              <p>Future</p>
+ 
+                  <button type="button" class="btn btn-disabled">ON</button>
+                  <button type="button" class="btn btn-disabled">OFF</button>
+
+            </div><!--closing Heaters conrol-->
+
+          </div><!--closing third row with all conrols-->
+        </div>
+        
+        <div id="cam" class="container2" style="padding-top:40px">
+          <div class="row3">
+            <div class="col-sm-3 text-center">
+              <h3>Camera 1</h3>
+                <hr>
+                <div class="thumbnail">
+                    <img src="http://automine.dyndns.org:8080/?action=stream" alt="Camera img" style="width:100%"> 
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary"> Camera ON</button>
+                  <button type="button" class="btn btn-default"> Camera OFF</button>
+                </div>
+                <p>Control</p>
+                <p></p>
+
+            </div>
+            <div class="col-sm-3 text-center">
+              <h3>Camera 2</h3>
+                <hr>
+                <div class="thumbnail">
+                    <img src="camera.jpg" alt="Camera img" style="width:70%"> 
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">ON</button>
+                  <button type="button" class="btn btn-default">OFF</button>
+                </div>
+                <p>Control</p>
+                <p></p>
+
+            </div>
+          </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container">
+                  <p class="navbar-text pull-left">© 2016 - H.A.A.B Tech
+                  </p>
+                  <p class="navbar-text pull-right" id="date"></p>
+                </div>
+            </div>
+        </footer> 
+
+    </body>
+    
+</html>
